@@ -1,39 +1,57 @@
 export default class Produto {
-    private descricao: string;
-    private valor: number;
-    private peso: number;
-    
-    public constructor(descricao: string, valor: number, peso: number) {
-        this.descricao = descricao;
-        this.valor = valor;
-        this.peso = peso;
-    }
+  private descricao: string;
+  private valor: number;
+  private peso: number;
 
-    public getDescricao(): string {
-        return this.descricao;
-    }
+  public constructor(descricao: string, valor: number, peso: number) {
+    this.descricao = descricao;
+    this.valor = valor;
+    this.peso = peso;
+  }
 
-    public setDescricao(descricao: string): void {
-        this.descricao = descricao;
-    }
+  public getDescricao(): string {
+    return this.descricao;
+  }
 
-    public getValor(): number {
-        return this.valor;
-    }
+  public setDescricao(descricao: string): void {
+    this.descricao = descricao;
+  }
 
-    public setValor(valor: number): void {
-        this.valor = Math.abs(valor);
-    }
+  public getValor(): number {
+    return this.valor;
+  }
 
-    public getPeso(): number {
-        return this.peso;
-    }
+  public setValor(valor: number): void {
+    this.valor = Math.abs(valor);
+  }
 
-    public setPeso(peso: number): void {
-        this.peso = Math.abs(peso);
-    }
+  public getPeso(): number {
+    return this.peso;
+  }
 
-    public calcularPesoQuilo(): number {
-        return this.valor / this.peso;
-    }
+  public setPeso(peso: number): void {
+    this.peso = Math.abs(peso);
+  }
+
+  public calcularPesoQuilo(): number {
+    return this.valor / this.peso;
+  }
+
+  public geraEtiqueta(): string {
+    return (
+      "- - - - - - - - - - - - - - - - - - - - - - - - - \n" +
+      this.getDescricao() +
+      "\n" +
+      "Peso: " +
+      this.getPeso().toFixed(3) +
+      " kg\n" +
+      "Preço: R$" +
+      this.getValor().toFixed(2) +
+      "\n" +
+      "Peso por quilo: R$" +
+      this.calcularPesoQuilo().toFixed(2) +
+      "\n" +
+      "- - - - - - - - - - - - - - - - - - - - - - - - - \n"
+    );
+  }
 }
