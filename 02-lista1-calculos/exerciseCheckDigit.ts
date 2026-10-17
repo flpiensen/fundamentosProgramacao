@@ -1,4 +1,4 @@
-import digito from "readline-sync";
+import teclado from "readline-sync";
 
 let numero: number = 0,
     primeiroDigito: number = 0,
@@ -11,8 +11,9 @@ let numero: number = 0,
     soma: number = 0,
     digitoVerificador: number = 0;
 
+console.log();
 console.log("Digite um número de 6 dígitos para calcular o dígito verificador: ");
-numero = digito.questionInt("Digite o número: ");
+numero = teclado.questionInt();
 
 primeiroDigito = Math.trunc(numero / 100000);
 resto = numero % 100000;
@@ -41,4 +42,5 @@ soma = (primeiroDigito + segundoDigito + terceiroDigito + quartoDigito + quintoD
 
 digitoVerificador = 10 - soma;
 
+console.log();
 console.log(`Seu numero com dígito verificador é: ${numero}-${digitoVerificador}`);
