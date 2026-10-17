@@ -4,7 +4,7 @@ Universidade Tecnológica Federal do Paraná · Campus Guarapuava
 Curso de Sistemas para Internet · Professor Eleandro Maschio
 Fundamentos de Programação (material da aula D2)
 
-> **Importante:** enfoque a modelagem e a consequente interação com a interface dos objetos. Nenhuma instrução de saída deve ser utilizada nas classes de modelagem. Os exercícios 1 e 6 são teóricos.
+> **Importante:** enfoque a modelagem e a consequente interação com a interface dos objetos. Nenhuma instrução de saída deve ser utilizada nas classes de modelagem. Os exercícios 1 e 6 são teóricos.  
 
 ---
 
