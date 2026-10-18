@@ -1,4 +1,4 @@
-import caixaEletronico from "readline-sync";
+import teclado from "readline-sync";
 
 let valorSaque: number = 0,
     quantidadeNotas100: number = 0,
@@ -10,8 +10,8 @@ let valorSaque: number = 0,
     quantidadeMoedas1: number = 0,
     resto: number = 0;
 
-console.log("Digite o valor do saque para calcular a quantidade de notas e moedas: ");
-valorSaque = caixaEletronico.questionInt("Digite o valor do saque: ");
+console.log("Digite o valor do saque: ");
+valorSaque = teclado.questionInt();
 
 quantidadeNotas100 = Math.trunc(valorSaque / 100);
 resto = valorSaque % 100;

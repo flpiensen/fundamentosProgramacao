@@ -1,4 +1,4 @@
-import calculoAnglo from "readline-sync";
+import teclado from "readline-sync";
 
 let angulo: number = 0,
     anguloCorrespondenteRestante = 0,
@@ -8,8 +8,8 @@ let angulo: number = 0,
     cosseno: number = 0,
     tangente: number = 0;
 
-console.log("Digite o valor do ângulo em graus: ");
-angulo = calculoAnglo.questionFloat("Digite o ângulo: ");
+console.log("Digite o ângulo: ");
+angulo = teclado.questionFloat();
 
 anguloCorrespondente = Math.trunc(angulo / 360);
 anguloCorrespondenteRestante = angulo % 360;
