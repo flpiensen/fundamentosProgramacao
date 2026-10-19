@@ -19,7 +19,7 @@ npx tsx 02-lista1-calculos/contaGotas.ts
 Nos exercícios de orientação a objetos, rode o `index.ts` da pasta:
 
 ```bash
-npx tsx 06-poo-lista/exercicio01/index.ts
+npx tsx 06-poo-lista/exerciseProductLabel/index.ts
 ```
 
 ## Pastas
@@ -32,12 +32,12 @@ npx tsx 06-poo-lista/exercicio01/index.ts
 | `04-simulado-prova` | Exercícios do simulado de prova |
 | `05-poo-exemplos` | Exemplos de aula de POO: as versões da classe `Produto` e o `Dosador` |
 | `06-poo-lista` | Lista de exercícios de POO e as respostas de conceitos (`conceitos.md`) |
-| `ExerciciosOrientaçãoObjetos` | Lista de conceitos de POO e a lista D2 (expressões booleanas e `if-else`) |
+| `07-if-else` | Lista D2: expressões booleanas e `if-else` |
 
-Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta). Na pasta da lista D2, o arquivo é `ExerciciosOrientaçãoObjetos/Lista2POO/lista-exercicios-d2.md`.
+Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta).
 
 ## Como adicionar um exercício novo
 
 - Exercícios de um arquivo só ficam direto na pasta da lista, com nome em camelCase (ex.: `mediaPonderada.ts`).
-- Exercícios com classes ficam numa pasta própria `exercicioNN/`, com o `index.ts` e um arquivo por classe (ex.: `Produto.ts`).
+- Cada exercício com classes fica numa pasta própria `exerciseNomeEmIngles/` (ex.: `exerciseProductLabel/`), com o `index.ts` e um arquivo por classe (ex.: `Produto.ts`).
 - Uma lista nova ganha uma pasta nova com o próximo número (ex.: `07-...`).
