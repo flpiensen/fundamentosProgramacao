@@ -1,4 +1,4 @@
-import densidadePopulacional from "./DensidadePopulacional"
+import densidadePopulacional from "./densidadePopulacional"
 
 let densidadePop: densidadePopulacional = new densidadePopulacional(1000, 2000);
 
