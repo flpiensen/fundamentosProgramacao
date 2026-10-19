@@ -1,4 +1,4 @@
-export default class densidadePopulacional {
+export default class guarapuava {
   private populacao: number;
   private area: number;
 

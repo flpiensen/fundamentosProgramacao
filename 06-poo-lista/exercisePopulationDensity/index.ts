@@ -1,6 +1,6 @@
-import densidadePopulacional from "./densidadePopulacional"
+import dencidade from "./Cidade"
 
-let densidadePop: densidadePopulacional = new densidadePopulacional(1000, 2000);
+let densidadePop: dencidade = new dencidade(1000, 2000);
 
 console.log();
 console.log("A densidade populacional é de " + densidadePop.getDensidade());
