@@ -7,7 +7,7 @@ export default class densidadePopulacional {
         this.area = area;
   }
 
-  public setDensidade(): number {
+  public getDensidade(): number {
         return this.populacao / this.area;
   }
 }
