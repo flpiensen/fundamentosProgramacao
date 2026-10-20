@@ -1,3 +1,7 @@
-// Exercício 2 · MAIORIDADE
-// Enunciado e perguntas-guia: ../lista-exercicios.md
-// Crie aqui os objetos e mostre os resultados; a classe fica num arquivo próprio nesta pasta.
+import verificador from "./maioridade";
+
+let cliente: verificador = new verificador(19);
+
+console.log();
+console.log("Você é adulto?");
+console.log(cliente.getMaioridade());
