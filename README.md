@@ -36,8 +36,9 @@ npx tsx 06-poo-lista/exerciseProductLabel/index.ts
 | `08-estruturas-condicionais` | Lista D4: estruturas condicionais (`if-else` e `switch-case`) |
 | `09-estruturas-repeticao` | Lista E2: estruturas de repetição (classe `PainelContador`) |
 | `10-estruturas-repeticao-2` | Lista E4: estruturas de repetição (classe `InteiroMatematico`) |
+| `11-simulado-2` | Simulado de prova 2: Imposto de Renda, romanos até 100 e tempo de um evento |
 
-Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta). A partir da `07-if-else`, o `lista-exercicios.md` é só a transcrição fiel do PDF, sem contexto extra. Nas pastas 09 e 10, o contexto de estudo fica separado, em `resumo.md`.
+Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta). A partir da `07-if-else`, o `lista-exercicios.md` é só a transcrição fiel do PDF, sem contexto extra. Nas pastas 09, 10 e 11, o contexto de estudo fica separado, em `resumo.md`.
 
 ## Como adicionar um exercício novo
 
