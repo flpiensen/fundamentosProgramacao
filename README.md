@@ -33,8 +33,9 @@ npx tsx 06-poo-lista/exerciseProductLabel/index.ts
 | `05-poo-exemplos` | Exemplos de aula de POO: as versões da classe `Produto` e o `Dosador` |
 | `06-poo-lista` | Lista de exercícios de POO e as respostas de conceitos (`conceitos.md`) |
 | `07-if-else` | Lista D2: expressões booleanas e `if-else` |
+| `08-estruturas-condicionais` | Lista D4: estruturas condicionais (`if-else` e `switch-case`) |
 
-Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta). Na `07-if-else`, o `lista-exercicios.md` é só a transcrição fiel do PDF, sem contexto extra.
+Cada pasta de lista tem um `lista-exercicios.md` com os enunciados transcritos do PDF, um índice e, em cada exercício, o objetivo, os conceitos, as entradas e saídas e perguntas para guiar a resolução (sem a resposta). Nas pastas `07-if-else` e `08-estruturas-condicionais`, o `lista-exercicios.md` é só a transcrição fiel do PDF, sem contexto extra.
 
 ## Como adicionar um exercício novo
 
