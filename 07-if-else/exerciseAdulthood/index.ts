@@ -1,7 +1,11 @@
-import verificador from "./maioridade";
+import teclado from "readline-sync";
+import Individuo from "./Individuo";
 
-let cliente: verificador = new verificador(19);
+let idade: number = 0;
+console.log("Informe sua idade: ");
+idade = teclado.questionInt();
+
+let verificaIdade: Individuo = new Individuo(idade);
 
 console.log();
-console.log("Você é adulto?");
-console.log(cliente.getMaioridade());
+console.log(verificaIdade.verificaIdade());
