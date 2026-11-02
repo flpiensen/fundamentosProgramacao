@@ -8,4 +8,4 @@ idade = teclado.questionInt();
 let verificaIdade: Individuo = new Individuo(idade);
 
 console.log();
-console.log(verificaIdade.verificaIdade());
+console.log(verificaIdade.getIdadeVerificada());
