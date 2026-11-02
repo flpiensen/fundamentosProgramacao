@@ -19,9 +19,9 @@ export default class Individuo {
 
   private verificaIdade(): string {
     if(this.idade >= Individuo.MAIORIDADE) {
-      return "é adulto"
+      return "é adulto";
     } else {
-      return "não é adulto"
+      return "não é adulto";
     }
   }
 }
