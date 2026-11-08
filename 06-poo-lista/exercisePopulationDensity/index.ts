@@ -1,6 +1,6 @@
-import dencidade from "./Cidade"
+import Cidade from "./Cidade"
 
-let densidadePop: dencidade = new dencidade(1000, 2000);
+let densidadePopulacional: Cidade = new Cidade("Guarapuava", 190542, 3168.087);
 
 console.log();
-console.log("A densidade populacional é de " + densidadePop.getDensidade());
+console.log(densidadePopulacional.toString());
