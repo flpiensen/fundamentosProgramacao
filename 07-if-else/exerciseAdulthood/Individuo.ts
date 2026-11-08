@@ -4,7 +4,6 @@ export default class Individuo {
 
   public constructor(idade: number) {
     this.setIdade(idade);
-    this.verificaIdade;
   }
 
   public getIdadeVerificada(): string {
@@ -17,11 +16,6 @@ export default class Individuo {
     }
   }
 
-  private verificaIdade(): string {
-    if(this.idade >= Individuo.MAIORIDADE) {
-      return "é adulto";
-    } else {
-      return "não é adulto";
-    }
-  }
+  public verificaIdade(): booblean {
+    (this.idade >= Individuo.MAIORIDADE)
 }
