@@ -1,14 +1,14 @@
 export default class Automovel {
-  public readonly TANQUE: number;
-  private combustivel: number;
+  public readonly capacidadeTanque: number;
+  private quantidadeCombustivel: number;
 
-  public constructor(tanque: number) {
-    this.TANQUE = tanque;
-    this.combustivel = 0;
+  public constructor(capacidadeTanque: number) {
+    this.capacidadeTanque = capacidadeTanque;
+    this.quantidadeCombustivel = 0;
   }
 
-  public getCombustivel(): number {
-    return this.combustivel;
+  public getCapacidadeTanque(): number {
+    return this.;
   }
 
   public getPercentualAbastecimento(): number {

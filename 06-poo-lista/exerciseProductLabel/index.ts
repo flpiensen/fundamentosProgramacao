@@ -1,14 +1,7 @@
 import Produto from "./Produto";
 
-let chocolate: Produto = new Produto(
-  "Barra de Chocolate Diamente Negro",
-  5.99,
-  0.09,
-);
+const CHOCOLATE: Produto = new Produto("Barra de Chocolate Diamente Negro", 5.99, 0.09);
+const OVOS: Produto = new Produto("Ovo de granja 12 un.", 11.29, 0.05);
 
-console.log();
-// console.log("Descriçao:", chocolate.getDescricao());
-// console.log("Peso:", chocolate.getPeso());
-// console.log("Preço:", chocolate.getValor());
-// console.log("Preço do quilo: R$", chocolate.calcularPesoQuilo().toFixed(2));
-console.log(chocolate.geraEtiqueta());
+console.log(OVOS.toString());
+console.log(CHOCOLATE.toString());

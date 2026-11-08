@@ -37,7 +37,7 @@ export default class Produto {
     return this.valor / this.peso;
   }
 
-  public geraEtiqueta(): string {
+  public toString(): string {
     return (
       "- - - - - - - - - - - - - - - - - - - - - - - - - \n" +
       this.getDescricao() +
