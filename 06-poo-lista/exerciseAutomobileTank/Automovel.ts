@@ -8,29 +8,32 @@ export default class Automovel {
   }
 
   public getCapacidadeTanque(): number {
-    return this.;
+    return this.capacidadeTanque;
   }
 
   public getPercentualAbastecimento(): number {
-    return (this.combustivel / this.TANQUE) * 100;
+    return (this.quantidadeCombustivel / this.capacidadeTanque) * 100;
   }
 
   public completaTanque(): void {
-    this.combustivel = this.TANQUE;
+    this.quantidadeCombustivel = this.capacidadeTanque;
   }
 
   public abastece(litros: number): void {
-    this.combustivel = Math.min(this.TANQUE, this.combustivel + litros);
+    this.quantidadeCombustivel = Math.min(
+      this.capacidadeTanque,
+      this.quantidadeCombustivel + litros,
+    );
   }
 
   public toString(): string {
     return (
-        "- - - - - - - - - - - - - - - - - - - - - - - - -\n" + 
+      "- - - - - - - - - - - - - - - - - - - - - - - - -\n" +
       "Quantidade de combustivel: " +
-      this.combustivel.toFixed(1) +
+      this.quantidadeCombustivel.toFixed(1) +
       " Litros\n" +
       "Capacidade do tanque: " +
-      this.TANQUE.toFixed(1) +
+      this.capacidadeTanque.toFixed(1) +
       " Litros\n" +
       "PErcentual do combustivel: " +
       this.getPercentualAbastecimento().toFixed(1) +

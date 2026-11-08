@@ -9,7 +9,7 @@ export default class Produto {
     this.peso = peso;
   }
 
-  public getDescricao(): string {
+  private getDescricao(): string {
     return this.descricao;
   }
 
@@ -17,7 +17,7 @@ export default class Produto {
     this.descricao = descricao;
   }
 
-  public getValor(): number {
+  private getValor(): number {
     return this.valor;
   }
 
@@ -25,7 +25,7 @@ export default class Produto {
     this.valor = Math.abs(valor);
   }
 
-  public getPeso(): number {
+  private getPeso(): number {
     return this.peso;
   }
 
@@ -33,7 +33,7 @@ export default class Produto {
     this.peso = Math.abs(peso);
   }
 
-  public calcularPesoQuilo(): number {
+  private calcularPesoQuilo(): number {
     return this.valor / this.peso;
   }
 
