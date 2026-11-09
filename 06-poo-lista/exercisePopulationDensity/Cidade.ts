@@ -1,12 +1,12 @@
 export default class Cidade {
   private nome: string;
-  private populacao: number;
-  private area: number;
+  private populacao: number = 0;
+  private area: number = 1.0;
 
   public constructor(nome: string, populacao: number, area: number) {
     this.nome = nome;
-    this.populacao = populacao;
-    this.area = area;
+    this.setPopulacao(populacao);
+    this.setArea(area);
   }
 
   public getNome(): string {
@@ -22,7 +22,11 @@ export default class Cidade {
   }
 
   public setPopulacao(populacao: number): void {
-    this.populacao = populacao;
+    if (populacao <= 0) {
+      this.populacao = 1;
+    } else {
+      this.populacao = populacao;
+    }
   }
 
   public getArea(): number {
@@ -30,7 +34,11 @@ export default class Cidade {
   }
 
   public setArea(area: number): void {
-    this.area = area;
+    if (area <= 0) {
+      this.area = 1;
+    } else {
+      this.area = area;
+    }
   }
 
   private getDensidadePopulacional(): number {
