@@ -3,3 +3,13 @@ node_modules/
 *.js.map
 *.d.ts
 *.d.ts.map
+
+
+.vscode/
+dist/
+state/
+package-lock.json
+package.json
+tsconfig.json
+extensions/
+extensions.json
