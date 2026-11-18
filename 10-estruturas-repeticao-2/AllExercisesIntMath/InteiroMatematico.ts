@@ -13,6 +13,30 @@ export default class InteiroMatematico {
     this.n;
   }
 
+
+  //Exercicio 2: Retorne uma cadeia de caracteres formatada com a tabuada de n.
+  public tabuada(): string {
+    let resultado: string = "";
+
+    for (let i = 1; i <= 10; i++) {
+      resultado += 'S{this.n} x ${i} = ${this.n * i}\n';
+    }
+    return resultado;
+  }
+
+  //Exercicio 3: Retorne o número de divisores (inteiros e positivos) de n.
+  public numeroDeDivisores(): number {
+    let quantidadeDivisores: number = 0;
+
+    for (let i = 1; i <= this.n; i++) {
+        if (this.n % i === 0) {
+            quantidadeDivisores++;
+        }
+      }
+
+    return quantidadeDivisores;
+  }
+
   public isTriangular(): boolean {
         let mult: number = 0,
             i: number = 1;
