@@ -13,13 +13,12 @@ export default class InteiroMatematico {
     this.n;
   }
 
-
   //Exercicio 2: Retorne uma cadeia de caracteres formatada com a tabuada de n.
   public tabuada(): string {
     let resultado: string = "";
 
     for (let i = 1; i <= 10; i++) {
-      resultado += 'S{this.n} x ${i} = ${this.n * i}\n';
+      resultado += "S{this.n} x ${i} = ${this.n * i}\n";
     }
     return resultado;
   }
@@ -29,24 +28,24 @@ export default class InteiroMatematico {
     let quantidadeDivisores: number = 0;
 
     for (let i = 1; i <= this.n; i++) {
-        if (this.n % i === 0) {
-            quantidadeDivisores++;
-        }
+      if (this.n % i === 0) {
+        quantidadeDivisores++;
       }
+    }
 
     return quantidadeDivisores;
   }
 
   public isTriangular(): boolean {
-        let mult: number = 0,
-            i: number = 1;
-        
-        while (mult < this.n) {
-            mult = i * (i+1) * (i+2);
-            i++;
-        }
-        return (mult === this.n);
+    let mult: number = 0,
+      i: number = 1;
+
+    while (mult < this.n) {
+      mult = i * (i + 1) * (i + 2);
+      i++;
     }
+    return mult === this.n;
+  }
 
   public menorDivisor(): number {
     if (this.n === 0 || this.n === 1) {
@@ -71,18 +70,34 @@ export default class InteiroMatematico {
 
   public isPrimo(): boolean {
     if (this.n <= 1) {
-        return false
+      return false;
     }
 
     let quantidadeDivisores: number = 0;
 
     for (let i = 1; i <= this.n; i++) {
-        if (this.n % i === 0) {
-            quantidadeDivisores++;
-        }
+      if (this.n % i === 0) {
+        quantidadeDivisores++;
+      }
     }
     return quantidadeDivisores === 2;
   }
 
-  
+  public divisorN(): number {
+    let m: number = 36,
+      divisoresComuns: number = 0;
+
+    for (let i = 1; i <= this.n / 2; i++) {
+      if (this.isDivisao(this.n, i) === this.isDivisao(m, i)) {
+        divisoresComuns++;
+      }
+      return divisoresComuns;
+    }
+  }
+
+  private isDivisao(x: number, y: number): number {
+    let resultado: number = 0;
+    resultado = x / y;
+    return resultado;
+  }
 }
