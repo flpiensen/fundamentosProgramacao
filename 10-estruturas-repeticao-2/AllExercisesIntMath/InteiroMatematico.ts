@@ -83,21 +83,4 @@ export default class InteiroMatematico {
     return quantidadeDivisores === 2;
   }
 
-  public divisorN(): number {
-    let m: number = 36,
-      divisoresComuns: number = 0;
-
-    for (let i = 1; i <= this.n / 2; i++) {
-      if (this.isDivisao(this.n, i) === this.isDivisao(m, i)) {
-        divisoresComuns++;
-      }
-      return divisoresComuns;
-    }
-  }
-
-  private isDivisao(x: number, y: number): number {
-    let resultado: number = 0;
-    resultado = x / y;
-    return resultado;
-  }
 }
